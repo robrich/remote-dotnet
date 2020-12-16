@@ -1,0 +1,18 @@
+{
+	//"image": "node:alpine",
+  "dockerFile": "Dockerfile",
+  "postCreateCommand": "dotnet restore",
+
+	"settings": {
+    "editor.fontSize": 24,
+    "editor.tabSize": 2
+	},
+
+	// Extensions installed in the container
+	"extensions": [
+		"ms-dotnettools.csharp"
+	],
+
+	// then browse to http://localhost:5000/
+	"forwardPorts": [5000]
+}
